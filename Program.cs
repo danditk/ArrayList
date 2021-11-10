@@ -15,8 +15,9 @@ namespace ArrayList20
             list.Add(2);
             list.Add("Adaś");
             list.Add(new Car("BMW"));
+            list.Add("Bartuś");
 
-            Console.WriteLine(list.Count);
+            Console.WriteLine(list[list.Count -1]);
 
             Console.ReadKey();
         }
