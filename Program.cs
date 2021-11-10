@@ -11,9 +11,19 @@ namespace ArrayList20
     {
         static void Main(string[] args)
         {
-            List<Car> carList = new List<Car>();
-            carList.Add(new Car("Mercedes"));
-            carList.Add(new Car("Seat"));
+            Dictionary<int, string> dictionary = new Dictionary<int, string>();
+            dictionary.Add(1,"Wojnem i mieczem");
+            dictionary.Add(2, "Śmierzch");
+            dictionary.Add(4, "Harry z młotem");
+
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine("{0}. - {1}", item.Key,item.Value);
+            }
+
+            //List<Car> carList = new List<Car>();
+            //carList.Add(new Car("Mercedes"));
+            //carList.Add(new Car("Seat"));
 
             //List<int> list = new List<int>();
             //list.Add(2);
