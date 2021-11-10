@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArrayList
+namespace ArrayList20
 {
     class Program
     {
         static void Main(string[] args)
         {
-            System.Collections.ArrayList list = new System.Collections.ArrayList();
+            ArrayList list = new ArrayList();
             list.Add(2);
             list.Add("Adaś");
             list.Add(new Car("BMW"));
