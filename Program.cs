@@ -11,11 +11,21 @@ namespace ArrayList20
     {
         static void Main(string[] args)
         {
-            ArrayList list = new ArrayList();
-            list.Add(2);
-            list.Add("Adaś");
-            list.Add(new Car("BMW"));
-            list.Add("Bartuś");
+            List<Car> carList = new List<Car>();
+            carList.Add(new Car("Mercedes"));
+            carList.Add(new Car("Seat"));
+
+            //List<int> list = new List<int>();
+            //list.Add(2);
+            //list.Add(5);
+
+
+
+            //ArrayList list = new ArrayList();
+            //list.Add(2);
+            //list.Add("Adaś");
+            //list.Add(new Car("BMW"));
+            //list.Add("Bartuś");
 
             //Console.WriteLine(list[list.Count -1]);
             //Console.WriteLine(list[2]); // wyświetla prawidłowo BMW z klasy, ponieważ klasa
@@ -26,15 +36,15 @@ namespace ArrayList20
             //Console.WriteLine(list.Count);
             //list.Reverse();
 
-            list.Insert(2, "Ala");
+            //list.Insert(2, "Ala");
 
-            list.Clear(); 
-            foreach (var item in list)
-            {
-                Console.WriteLine(item);
-            }
+            //list.Clear(); 
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            Console.WriteLine(list.Count);
+            //Console.WriteLine(list.Count);
 
             Console.ReadKey();
         }
