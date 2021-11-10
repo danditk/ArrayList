@@ -21,10 +21,13 @@ namespace ArrayList20
             //Console.WriteLine(list[2]); // wyświetla prawidłowo BMW z klasy, ponieważ klasa
                                         // została przeciążona za pomocą metody overrise string ToString()
 
-            foreach (var item in list)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            list.RemoveAt(1); // Method to delete one item in array. !!! as U can see all indexes decrement numbers
+            Console.WriteLine(list.Count);
 
             Console.ReadKey();
         }
