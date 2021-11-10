@@ -16,7 +16,23 @@ namespace ArrayList20
             queue.Enqueue(1);
             queue.Enqueue(2);
             queue.Enqueue(3);
-            queue.Enqueue(1);
+            queue.Enqueue(7);
+            queue.Enqueue(7);
+
+            //Console.WriteLine(queue.Peek());
+            //Console.WriteLine(queue.Peek());
+
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Peek());
+            Console.WriteLine(queue.Peek());
+            Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
+
+            // ! You have to create some code fo exception - Console.WriteLine(queue.Dequeue()); w kolejce nie ma już żadnych elementów
+            if (queue.Count == 0)
+                Console.WriteLine(queue.Dequeue());
+            else Console.WriteLine("Kolejka jest pusta");
 
 
 
