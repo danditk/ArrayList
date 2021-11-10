@@ -11,15 +11,27 @@ namespace ArrayList20
     {
         static void Main(string[] args)
         {
-            Dictionary<int, string> dictionary = new Dictionary<int, string>();
-            dictionary.Add(1,"Wojnem i mieczem");
-            dictionary.Add(2, "Śmierzch");
-            dictionary.Add(4, "Harry z młotem");
 
-            foreach (var item in dictionary)
-            {
-                Console.WriteLine("{0}. - {1}", item.Key,item.Value);
-            }
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Enqueue(1);
+
+
+
+            //Dictionary<int, string> dictionary = new Dictionary<int, string>();
+            //dictionary.Add(1, "Wojnem i mieczem");
+            //dictionary.Add(10, "Śmierzch");
+            //dictionary.Add(4, "Harry z młotem");
+
+            //if (!dictionary.ContainsKey(4)) // When we hawe thesame key we have to fhink about it and create exception!
+            //    dictionary.Add(4, "!!!!!");
+
+            //foreach (var item in dictionary)
+            //{
+            //    Console.WriteLine("{0}. - {1}", item.Key, item.Value);
+            //}
 
             //List<Car> carList = new List<Car>();
             //carList.Add(new Car("Mercedes"));
@@ -39,7 +51,7 @@ namespace ArrayList20
 
             //Console.WriteLine(list[list.Count -1]);
             //Console.WriteLine(list[2]); // wyświetla prawidłowo BMW z klasy, ponieważ klasa
-                                        // została przeciążona za pomocą metody overrise string ToString()
+            // została przeciążona za pomocą metody overrise string ToString()
 
 
             //list.RemoveAt(1); // Method to delete one item in array. !!! as U can see all indexes decrement numbers
