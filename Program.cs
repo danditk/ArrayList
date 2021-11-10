@@ -27,11 +27,14 @@ namespace ArrayList20
             //list.Reverse();
 
             list.Insert(2, "Ala");
+
+            list.Clear(); 
             foreach (var item in list)
             {
                 Console.WriteLine(item);
             }
 
+            Console.WriteLine(list.Count);
 
             Console.ReadKey();
         }
