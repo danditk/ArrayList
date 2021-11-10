@@ -34,7 +34,7 @@ namespace ArrayList20
 
         public bool Equals(Car car)
         {
-            return car.Brand == this.Brand;
+            return car.Brand == this.Brand; // We can add here && or || to compare mor precisely
         }
     }
 }
