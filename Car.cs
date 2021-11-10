@@ -9,14 +9,18 @@ namespace ArrayList20
     class Car
     {
 
-        public string Brend { get; set; }
+        public string Brand { get; set; }
         /// <summary>
         /// Tworzenie obiektu samochód
         /// </summary>
-        /// <param name="brend">Marka samochodu</param>
-        public Car(string brend)
+        /// <param name="brand">Marka samochodu</param>
+        public Car(string brand)
         {
-            Brend = brend;
+            Brand = brand;
+        }
+        public override string ToString()
+        {
+            return Brand;
         }
     }
 }
