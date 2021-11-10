@@ -25,11 +25,12 @@ namespace ArrayList20
             //list.RemoveAt(1); // Method to delete one item in array. !!! as U can see all indexes decrement numbers
             //Console.WriteLine(list.Count);
             //list.Reverse();
-            //foreach (var item in list)
-            //{
-            //    Console.WriteLine(item);
-            //}
 
+            list.Insert(2, "Ala");
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
 
 
             Console.ReadKey();
