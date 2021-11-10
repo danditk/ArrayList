@@ -11,15 +11,30 @@ namespace ArrayList20
     {
         static void Main(string[] args)
         {
-            Stack<string> stack = new Stack<string>();
-            // Stos działa bardzo podobnie do kolejki, różni się tylko kolejnością (taki queue.Reverse() :D).
-            stack.Push("Adam");
-            stack.Push("Ewa");
-            stack.Push("Abla");
-            stack.Push("Kain");
+            Car car1 = new Car("Fiat", 1994);
+            Car car2 = new Car("Fiat", 1994);
+            Car car3 = new Car("Fiat", 2008);
 
-            Console.WriteLine("{0} zabił {1}, i {2} powiedziała mężowi, który miał na imie {3}",
-                stack.Pop(), stack.Pop(), stack.Pop(), stack.Pop());
+            // Po dopisaniu przeciążenia overrise Equals
+            Console.WriteLine(car2.Equals(car1)); // wynik true, bo wartość w marce jest taka sama
+            Console.WriteLine(car2.Equals(car3)); // nawet jak zmienimy rocznik
+
+            //Przed napisaniem metody overrise
+            //Console.WriteLine(car2 == car1); 
+            //Console.WriteLine(car2.Equals(car1)); // zwraca false bo obiekty nie są całkowicie identyczn,
+            // mają inne nazwy klas (wiążące z referencją - kiedy auto1 = auto2;
+            // czyli zostanie przypisane)
+
+
+            //Stack<string> stack = new Stack<string>();
+            //// Stos działa bardzo podobnie do kolejki, różni się tylko kolejnością (taki queue.Reverse() :D).
+            //stack.Push("Adam");
+            //stack.Push("Ewa");
+            //stack.Push("Abla");
+            //stack.Push("Kain");
+
+            //Console.WriteLine("{0} zabił {1}, i {2} powiedziała mężowi, który miał na imie {3}",
+            //    stack.Pop(), stack.Pop(), stack.Pop(), stack.Pop());
 
             //Queue<int> queue = new Queue<int>();
             //queue.Enqueue(1);
