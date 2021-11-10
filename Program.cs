@@ -11,28 +11,37 @@ namespace ArrayList20
     {
         static void Main(string[] args)
         {
+            Stack<string> stack = new Stack<string>();
+            // Stos działa bardzo podobnie do kolejki, różni się tylko kolejnością (taki queue.Reverse() :D).
+            stack.Push("Adam");
+            stack.Push("Ewa");
+            stack.Push("Abla");
+            stack.Push("Kain");
 
-            Queue<int> queue = new Queue<int>();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Enqueue(7);
-            queue.Enqueue(7);
+            Console.WriteLine("{0} zabił {1}, i {2} powiedziała mężowi, który miał na imie {3}",
+                stack.Pop(), stack.Pop(), stack.Pop(), stack.Pop());
 
+            //Queue<int> queue = new Queue<int>();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(7);
+            //queue.Enqueue(7);
+
+            ////Console.WriteLine(queue.Peek());
+            ////Console.WriteLine(queue.Peek());
+
+            //Console.WriteLine(queue.Dequeue());
+            //Console.WriteLine(queue.Dequeue());
             //Console.WriteLine(queue.Peek());
             //Console.WriteLine(queue.Peek());
+            //Console.WriteLine(queue.Dequeue());
+            //Console.WriteLine(queue.Dequeue());
 
-            Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Peek());
-            Console.WriteLine(queue.Peek());
-            Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Dequeue());
-
-            // ! You have to create some code fo exception - Console.WriteLine(queue.Dequeue()); w kolejce nie ma już żadnych elementów
-            if (queue.Count == 0)
-                Console.WriteLine(queue.Dequeue());
-            else Console.WriteLine("Kolejka jest pusta");
+            //// ! You have to create some code fo exception - Console.WriteLine(queue.Dequeue()); w kolejce nie ma już żadnych elementów
+            //if (queue.Count == 0)
+            //    Console.WriteLine(queue.Dequeue());
+            //else Console.WriteLine("Kolejka jest pusta");
 
 
 
