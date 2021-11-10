@@ -18,7 +18,13 @@ namespace ArrayList20
             list.Add("Bartuś");
 
             //Console.WriteLine(list[list.Count -1]);
-            Console.WriteLine();
+            //Console.WriteLine(list[2]); // wyświetla prawidłowo BMW z klasy, ponieważ klasa
+                                        // została przeciążona za pomocą metody overrise string ToString()
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }
